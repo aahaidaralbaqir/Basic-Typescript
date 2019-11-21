@@ -5,6 +5,7 @@ var User = /** @class */ (function () {
     // constructor(name : string) {
     //     this.name = name
     // }
+    // di javascript tidak ada class ada nya prototype
     function User(name, age) {
         this.name = name;
         this.age = age;
@@ -13,5 +14,10 @@ var User = /** @class */ (function () {
     return User;
 }());
 exports.User = User;
+/**
+ * Public = bisa diakses disemua class / di luar class
+ * Protected = bisa diakses  class tersebut atau kelas turunannya
+ * Private = bisa diakses  class tersebut
+ */
 var user = new User('haidar albaqir', 12);
 console.log(user);
