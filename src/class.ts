@@ -29,6 +29,12 @@ class Admin extends User {
         this.phone = phone
     }
 
+    static getRoleName : string = "Haidar albaqir"
+
+    static getNameRole()  {
+        return this.getRoleName
+    }
+
     getRole() : { read : boolean, write : boolean } {
         return {
             read : this.read,
@@ -50,11 +56,14 @@ class Admin extends User {
  * Protected = Only can be accessed in that class and its children
  * Private = bisa diakses  class tersebut
  */
-let admin = new Admin('081290315248','ahmad haidar albaqir',12);
+// let admin = new Admin('081290315248','ahmad haidar albaqir',12);
 
 // console.log(admin.getRole())
 // console.log(admin.setName('haidar'))
 // console.log(admin.getName())
 
-admin.email = "ahmadhrasdasd.22@gmail.com"
-console.log(admin.email)
+// admin.email = "ahmadhrasdasd.22@gmail.com"
+// console.log(admin.email)
+let admin = Admin.getNameRole()
+
+console.log(admin)

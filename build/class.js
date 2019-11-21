@@ -42,6 +42,9 @@ var Admin = /** @class */ (function (_super) {
         _this.phone = phone;
         return _this;
     }
+    Admin.getNameRole = function () {
+        return this.getRoleName;
+    };
     Admin.prototype.getRole = function () {
         return {
             read: this.read,
@@ -58,6 +61,7 @@ var Admin = /** @class */ (function (_super) {
         enumerable: true,
         configurable: true
     });
+    Admin.getRoleName = "Haidar albaqir";
     return Admin;
 }(User));
 /**
@@ -65,9 +69,11 @@ var Admin = /** @class */ (function (_super) {
  * Protected = Only can be accessed in that class and its children
  * Private = bisa diakses  class tersebut
  */
-var admin = new Admin('081290315248', 'ahmad haidar albaqir', 12);
+// let admin = new Admin('081290315248','ahmad haidar albaqir',12);
 // console.log(admin.getRole())
 // console.log(admin.setName('haidar'))
 // console.log(admin.getName())
-admin.email = "ahmadhrasdasd.22@gmail.com";
-console.log(admin.email);
+// admin.email = "ahmadhrasdasd.22@gmail.com"
+// console.log(admin.email)
+var admin = Admin.getNameRole();
+console.log(admin);
