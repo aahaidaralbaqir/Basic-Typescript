@@ -1,11 +1,17 @@
 // enum
 
 // numeric enum
-enum Month {
-    JAN,
-    FAB,
-    MEI,
-    APR
-}
+// enum Month {
+//     JAN,
+//     FAB,
+//     MEI,
+//     APR
+// }
 
-console.log(Month)
+// string enum
+enum Month {
+    JAN = "januari",
+    FEB = "februari",
+    MAR = "Maret"
+}
+console.log(Month.JAN)

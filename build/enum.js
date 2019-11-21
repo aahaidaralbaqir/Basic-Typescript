@@ -1,11 +1,17 @@
 "use strict";
 // enum
 // numeric enum
+// enum Month {
+//     JAN,
+//     FAB,
+//     MEI,
+//     APR
+// }
+// string enum
 var Month;
 (function (Month) {
-    Month[Month["JAN"] = 0] = "JAN";
-    Month[Month["FAB"] = 1] = "FAB";
-    Month[Month["MEI"] = 2] = "MEI";
-    Month[Month["APR"] = 3] = "APR";
+    Month["JAN"] = "januari";
+    Month["FEB"] = "februari";
+    Month["MAR"] = "Maret";
 })(Month || (Month = {}));
-console.log(Month);
+console.log(Month.JAN);
