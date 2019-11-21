@@ -13,5 +13,15 @@ function multiply(a, b) {
 var Add = function (val1, val2) {
     return val1 * val2;
 };
-console.log(Add(2, 3));
+// optional paramater in function
+var getUmur = function (val1, val2) {
+    return val1 + " " + val2;
+};
+console.log(getUmur("haidar"));
+// optional paramater in function
+var getNumber = function (val1, val2) {
+    if (val2 === void 0) { val2 = 2; }
+    return val1 + val2;
+};
+console.log(getNumber(1));
 // printName()git

@@ -27,7 +27,20 @@ const Add : Tambah  = (val1 : number,val2:number) => {
     return val1 * val2
 }
 
-console.log(Add(2,3))
 
+// optional paramater in function
+const getUmur = (val1 : string,val2? : string) : string => {
+    return val1  + " "+ val2
+}
+
+console.log(getUmur("haidar"))
+
+
+// optional paramater in function
+const getNumber = (val1 : number,val2 : number = 2) : number => {
+    return val1 + val2
+}
+
+console.log(getNumber(1))
 // printName()git
 

@@ -4,6 +4,16 @@
 // number
 // let umur : number = 20
 // umur = 30
-// console.log(umur)
+// array any
 var array = [1, 2, 3, 'asd', 'asd'];
-console.log(array);
+// any
+var heroes = "haidar";
+heroes = 20;
+heroes = "kampret";
+heroes = {};
+heroes = true || false || "string";
+// union
+var phone;
+phone = "081290315248";
+phone = 2368126381623;
+console.log(phone);

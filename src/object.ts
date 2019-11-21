@@ -7,3 +7,5 @@ let user : User = {
     name : 'ahmad haidar albaqir',
     age : 123
 }
+
+console.log(user)
