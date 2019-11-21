@@ -22,6 +22,7 @@ class Admin extends User {
     read : boolean = true
     write : boolean = true
     phone : string
+    private _email : string = ""
 
     constructor(phone : string,name : string, age : number) {
         super(name,age)
@@ -34,6 +35,15 @@ class Admin extends User {
             write : this.write
         }
     }
+
+    set email(value : string) {
+        this._email = value
+    }
+
+    get email () : string {
+       return this._email
+    }
+
 }
 /**
  * Public = Can be accessed in all classes
@@ -42,6 +52,9 @@ class Admin extends User {
  */
 let admin = new Admin('081290315248','ahmad haidar albaqir',12);
 
-console.log(admin.getRole())
-console.log(admin.setName('haidar'))
-console.log(admin.getName())
+// console.log(admin.getRole())
+// console.log(admin.setName('haidar'))
+// console.log(admin.getName())
+
+admin.email = "ahmadhrasdasd.22@gmail.com"
+console.log(admin.email)

@@ -38,6 +38,7 @@ var Admin = /** @class */ (function (_super) {
         var _this = _super.call(this, name, age) || this;
         _this.read = true;
         _this.write = true;
+        _this._email = "";
         _this.phone = phone;
         return _this;
     }
@@ -47,6 +48,16 @@ var Admin = /** @class */ (function (_super) {
             write: this.write
         };
     };
+    Object.defineProperty(Admin.prototype, "email", {
+        get: function () {
+            return this._email;
+        },
+        set: function (value) {
+            this._email = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
     return Admin;
 }(User));
 /**
@@ -55,6 +66,8 @@ var Admin = /** @class */ (function (_super) {
  * Private = bisa diakses  class tersebut
  */
 var admin = new Admin('081290315248', 'ahmad haidar albaqir', 12);
-console.log(admin.getRole());
-console.log(admin.setName('haidar'));
-console.log(admin.getName());
+// console.log(admin.getRole())
+// console.log(admin.setName('haidar'))
+// console.log(admin.getName())
+admin.email = "ahmadhrasdasd.22@gmail.com";
+console.log(admin.email);
