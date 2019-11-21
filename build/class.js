@@ -34,10 +34,11 @@ var User = /** @class */ (function () {
 exports.User = User;
 var Admin = /** @class */ (function (_super) {
     __extends(Admin, _super);
-    function Admin() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
+    function Admin(phone, name, age) {
+        var _this = _super.call(this, name, age) || this;
         _this.read = true;
         _this.write = true;
+        _this.phone = phone;
         return _this;
     }
     Admin.prototype.getRole = function () {
@@ -53,7 +54,7 @@ var Admin = /** @class */ (function (_super) {
  * Protected = Only can be accessed in that class and its children
  * Private = bisa diakses  class tersebut
  */
-var admin = new Admin('Toni', 12);
+var admin = new Admin('081290315248', 'ahmad haidar albaqir', 12);
 console.log(admin.getRole());
 console.log(admin.setName('haidar'));
 console.log(admin.getName());

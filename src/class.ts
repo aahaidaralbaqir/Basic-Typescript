@@ -21,6 +21,12 @@ export class User {
 class Admin extends User {
     read : boolean = true
     write : boolean = true
+    phone : string
+
+    constructor(phone : string,name : string, age : number) {
+        super(name,age)
+        this.phone = phone
+    }
 
     getRole() : { read : boolean, write : boolean } {
         return {
@@ -34,7 +40,7 @@ class Admin extends User {
  * Protected = Only can be accessed in that class and its children
  * Private = bisa diakses  class tersebut
  */
-let admin = new Admin('Toni',12);
+let admin = new Admin('081290315248','ahmad haidar albaqir',12);
 
 console.log(admin.getRole())
 console.log(admin.setName('haidar'))
